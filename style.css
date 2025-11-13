@@ -1,0 +1,93 @@
+:root{
+    --background-color:hsl(47, 88%, 63%);
+    --main-backcolor:white;
+    --h1-text-color:hsl(0, 0%, 7%);
+    --p-text-color:hsl(0, 0%, 42%);
+    --font-family:'Figtree', sans-serif;
+    --main-max-width:384px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background-color: var(--background-color);
+}
+
+main{
+    display: grid;
+    padding: 24px;
+    max-width: var(--main-max-width);
+    background-color: var(--main-backcolor);
+    border: 1px solid var(--h1-text-color);
+    border-radius: 20px;
+    box-shadow: 8px 8px black;
+    gap: 24px;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 22px;
+    color: var(--h1-text-color);
+    font-weight: 800;
+    margin:0;
+}
+
+p{
+    font-size: 16px;
+    color: var(--p-text-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.text-holder{
+    display: grid;
+    gap: 12px;
+}
+
+.small-title{
+    width: 100%;
+    color: var(--h1-text-color);
+    font-weight: 800;
+    padding: 4px 12px;
+    background-color: var(--background-color);
+    border-radius:4px;
+    gap: 8px;
+}
+
+.publishedDate{
+    color: var(--h1-text-color);
+}
+
+.user-holder{
+    display: inline-flex;
+    align-items: center;
+    gap:12px;
+}
+
+span img{
+    width: 32px;
+}
+
+.userName{
+    font-weight: 800;
+    color: var(--h1-text-color);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
