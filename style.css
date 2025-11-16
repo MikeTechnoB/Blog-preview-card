@@ -60,13 +60,13 @@ p {
 }
 
 .small-title {
-  width: 100%;
+  display: inline-block;
+  width: max-content;
   color: var(--h1-text-color);
   font-weight: 800;
   padding: 4px 12px;
   background-color: var(--background-color);
   border-radius: 4px;
-  gap: 8px;
 }
 
 .publishedDate {
